@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<title>主页</title>
+	<link rel="stylesheet" href="demo.css">
+	<link rel="stylesheet" href="animate.min.css">
+	<script type="text/javascript">
+		(function (doc, win) {
+		  var docEl = doc.documentElement,
+		    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		    recalc = function () {
+		      var clientWidth = docEl.clientWidth;
+		      if (!clientWidth) return;
+		      docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+		    };
+
+		  if (!doc.addEventListener) return;
+		  win.addEventListener(resizeEvt, recalc, false);
+		  doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+</head>
+<body>
+	<div class="title fadeInDownBig animated">
+		<img src="img/hdu.jpg" alt="杭电校门">
+	</div>
+	<div class="container rollIn animated">
+		<div class="r_1">
+			<div class="hduhelop_logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="digital_hdu">
+				<img src="img/digitalhdu.png" alt="">
+				<div class="text">数字杭电</div>
+			</div>
+			<div class="personal">
+				<img src="img/personal.png" alt="">
+				<div class="text">个人中心</div>
+			</div>
+		</div>
+		<div class="r_2">
+			<div class="hduhelp_function">
+				<img src="img/function.png" alt="">
+				<div class="text">助手功能</div>
+			</div>
+			<div class="r_2_2">
+				<div class="information">
+					<img src="img/information.png" alt="">
+					<div class="text">信息服务</div>
+				</div>
+				<div class="notice">
+					<img src="img/notice.png" alt="">
+					<div class="text">教务通知</div>
+				</div>
+			</div>
+		</div>
+		<div class="r_3">
+			<div class="guide">
+				<img src="img/guide.png" alt="">
+				<div class="text">新生指南</div>
+			</div>
+			<div class="brief">
+				<img src="img/brief.png" alt="">
+				<div class="text">助手简介</div>
+			</div>
+		</div>
+	</div>
+	<footer class="tada animated">
+		<small>copyrignt &copy; 杭电助手</small>
+	</footer>
+</body>
+</html>
